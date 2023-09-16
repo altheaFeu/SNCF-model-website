@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+} 
+
+
+body{
+    margin:0;
+    padding:0;
+    min-height:100vh;
+    width:100%;
+    background: #0f2435;
+    position:fixed;
+    justify-content:center;
+    align-items:center;    
+}
+
+/* Création de la bulle */
+.bulles{
+    position:absolute;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    box-shadow: inset 0 0 25px rgba(255, 255,255,0.25);
+    bottom:-100px;
+    animation: bub 3s ease-in infinite;
+}
+
+.bulles::before{
+    content:'';
+    position:absolute;
+    top:15px;
+    right:13px;
+    bottom:0px;
+}
+
+.bulles span{
+    position:absolute;
+    border-radius:50%
+}
+
+/* Création de plusieurs bulles sans avoir besoin de créer de listes */
+/* Bordure gauche */
+.bulles span:nth-child(1){
+    inset: 10px;
+    border-left: 8px solid #0fb4ff;
+    filter : blur(6px);
+}
+
+/* Bordure droite */
+.bulles span:nth-child(2){
+    inset: 10px;
+    border-right:8px solid #ff4484;
+    filter : blur(8px);
+}
+
+/* Bordure haut */
+.bulles span:nth-child(3){
+    inset: 10px;
+    border-top:8px solid rgb(209, 151, 15);
+    filter : blur(8px);
+}
+
+/* Seconde bordure gauche */
+.bulles span:nth-child(4){
+    inset: 20px;
+    border-left:8px solid #ff4484;
+    filter : blur(8px);
+}
+
+/* Bordure bas */
+.bulles span:nth-child(5){
+    inset: 10px;
+    border-bottom: 8px solid rgb(211, 211, 211);
+    filter : blur(6px);
+    transform: rotate(330deg);
+}
+
+/* Position de départ */
+.bulles.a{
+    left:10%;
+    animation: bub2 5s ease-in 3s infinite;
+}
+
+.bulles.b{
+    left:25%;
+    animation: bub 3.5s ease-in 3.4s infinite;
+}
+
+.bulles.c{
+    left:6%;
+    animation: bub 7s ease-in 5.8s infinite;
+}
+
+.bulles.d{
+    left:55%;
+    animation: bub 3.8s ease-in 5s infinite;
+}
+
+.bulles.e{
+    left:70%;
+    animation: bub2 5.3s ease-in 5.5s infinite;
+}
+
+.bulles.f{
+    left:80%;
+    animation: bub 5.5s ease-in 5s infinite;
+}
+
+.bulles.g{
+    left:58%;
+    animation: bub2 5.5s ease-in 5s infinite;
+}
+
+.bulles.h{
+    left:45%;
+    animation: bub 4.6s ease-in 5s infinite;
+}
+
+.bulles.i{
+    left:33%;
+    animation: bub2 3.8s ease-in 5.1s infinite;
+}
+
+.bulles.j{
+    left:66%;
+    animation: bub 5s ease-in 4.5s infinite;
+}
+
+.bulles.k{
+    left:20%;
+    animation: bub2 6s ease-in infinite;
+}
+
+/* Animation des bulles */
+
+@keyframes bub{
+    0%{
+        opacity:0;
+    }
+
+    10%, 93%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translate(90px, -1000px);
+        display:none;
+    }
+}
+
+@keyframes bub2{
+    0%{
+        opacity:0;
+    }
+
+    10%, 93%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translate(-90px, -1000px);
+        display:none;
+    }
+}

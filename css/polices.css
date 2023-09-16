@@ -1,0 +1,50 @@
+@font-face {
+    font-family: ArialRegular;
+    src: url(../polices/arial.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: ArialBoldItalic;
+    src: url(../polices/arialbi.ttf) format('truetype'); 
+}
+
+@font-face {
+    font-family: ArialBold;
+    font-weight:bold;
+    src: url(../polices/arialbd.ttf) format('truetype'); 
+}
+
+@font-face {
+    font-family: ArialItalic;
+    font-style:italic;
+    src: url(../polices/ariali.ttf) format('truetype'); 
+}
+
+@font-face {
+    font-family: ArialBlack;
+    src: url(../polices/ariablk.ttf) format('truetype'); 
+}
+
+@font-face {
+    font-family: ArialSemicondensedBlackItalic;
+    font-weight:bold;
+    font-style:italic;
+    src: url(../polices/ARIALNBI.ttf) format('truetype'); 
+}
+
+@font-face {
+    font-family: ArialSemicondensedBold;
+    font-weight:bold;
+    src: url(../polices/ARIALNB.ttf) format('truetype'); 
+}
+
+@font-face {
+    font-family: ArialSemicondensedItalic;
+    font-style:italic;
+    src: url(../polices/ARIALNI.ttf) format('truetype'); 
+}
+
+@font-face {
+    font-family: ArialSemicondensed;
+    src: url(../polices/ARIALN.ttf) format('truetype'); 
+}

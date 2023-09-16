@@ -1,0 +1,114 @@
+/* Paramètres du footer */
+footer {
+    display:flex;
+    flex-direction: column;
+    bottom:0;
+    margin:0;
+}    
+
+.footer{
+    display:flex;
+    text-align:center;  
+    min-height: 60px; 
+    width:100%;
+    padding-bottom:10px 0; 
+    background-color: var(--global-color-text-background, rgb(76,76,76));
+}
+
+/* Paramètres du footer de gauche */
+.footer_left{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    margin-left:10px;
+}
+
+/* Paramètres du footer de droite */
+.footer_right{
+    position: relative;
+    align-items:center; 
+    justify-content:right;
+    padding-left:10px;
+    padding-top:20px;
+}
+
+/* Enlever les décorations pour l'ensemble des liens */
+.footer_right nav a:link{
+    text-decoration-line:none;
+    text-decoration-color:transparent;
+}
+
+.footer_right nav a:visited{
+    text-decoration-line:none;
+    text-decoration-color:transparent;
+}
+
+.footer_right nav span{
+    font-family: ArialRegular;
+    color : var(--global-color-text-footer, rgb(185,185,185));
+    font-size: 15px; 
+    display: inline-block;
+    vertical-align: middle;
+    margin-left:30px;
+}
+
+.footer_right nav span:hover{
+    color: var(--global-color-text-footer-hover, rgb(129,128,128));
+    transform: scale(1.1);
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.center-image {
+    max-width: 100%;
+    max-height: 50%;
+    margin: 0;
+    padding:0;
+}
+
+.sncf-logo{
+    height:40px;
+}
+
+/* Modification de la taille et de l'alignement en fonction de la taille de l'écran */
+@media screen and (max-width:720px){
+    .footer_right{
+        margin-top:10px;
+        margin-bottom:10px;
+        padding:0;
+        vertical-align:middle;
+        display:inline-block;
+        text-align:center;
+        align-items:center;
+    }
+
+    .footer-righ nav span{
+        font-size:12px;
+    }
+}
+
+@media screen and (max-width:541px){
+    .footer{
+        min-height:40px;
+    }
+
+    .footer_right nav span{
+        font-size:6px;
+    }
+
+    .sncf-logo{
+        height:20px;
+    }
+}
+
+@media screen and (max-width:281px){
+    .footer_right nav span{
+        font-size:8px;
+    }
+
+    .sncf-logo{
+        height:20px;
+    }
+}
