@@ -1,0 +1,107 @@
+body, html{
+    margin:0;
+    padding:0;
+    min-height:100vh;
+}
+
+/* Permet de garder le footer en bas de la page */
+main{
+    min-height: calc(100vh - 17.4px - 40px);
+    min-width:100%;
+}
+
+.underline{
+    text-decoration:underline;
+}
+
+/* Création de la boîte */
+.main-infos{
+    margin:50px;
+    background-color:var(--global-main-color, rgb(5,122,168));
+    border-radius:15px;
+    border-color:var(--global-color-text-background, rgb(76,76,76));
+}
+
+/* Modification de la taille de l'image */
+.image-chantier{
+    max-width:50%;
+    max-height:50%;
+    float:right;
+    padding:30px;
+}
+
+/* Modification du texte */
+.text-principal{
+    font-family:ArialRegular;
+    font-size:18px;
+    padding:30px;
+    color:var(--global-background-color, white);
+}
+
+.titre{
+    font-family:ArialBold;
+    font-size:50px;
+    margin:0;
+    color:var(--global-background-color, white);
+}
+
+/* Première lettre est une lettrine */
+.lettrine::first-letter{	
+	font-size:80px;
+	float:left;
+	margin-right:10px;
+	line-height:60px;
+	font-family:ArialBold;
+    color:var(--global-background-color, white);
+}
+
+/* Adaptation à tout les écrans */
+@media screen and (max-width:600px){
+    .image-chantier{
+        padding:30px 10px 5px;
+    }
+
+    .text-principal{
+        font-size:13px;
+    }
+    
+    .titre{
+        font-size:30px;
+    }
+    
+    .lettrine::first-letter{	
+        font-size:50px;
+    }
+}
+
+/* Adaptation à tout les écrans */
+@media screen and (max-width:500px){
+    .main-infos{
+        margin:20px;
+    }
+
+    .image-chantier{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float:none;
+        max-width:90%;
+        max-height:90%;
+        width: 100%;
+    }
+
+    .text-principal{
+        font-size:10px;
+        padding:10px 20px 20px;
+    }
+    
+    .titre{
+        font-size:20px;
+    }
+    
+    .lettrine::first-letter{	
+        font-size:30px;
+        margin-right:5px;
+        line-height:40px;
+    }
+}

@@ -1,0 +1,286 @@
+body, html{
+    margin:0;
+    padding:0;
+    min-height:100vh;
+}
+
+/* Permet de garder le footer en bas de la page */
+main{
+    margin-top:93px;
+    min-height: calc(100vh - 17.4px - 40px);
+}
+
+/* Paramétrage du bloc de présentation */
+.presentation-page{
+    display:flex;
+    position:relative;
+    height:230px;
+    max-width:100%;
+    max-height:auto;
+    background-color: var(--global-main-color, #82786F);
+}
+
+/* Paramétrage du bloc de texte à gauche de l'icône */
+.presentation-gauche{
+    display:flex;
+    width:70%;
+    padding-left:60px;
+    text-align:center;
+    align-items:center;
+    justify-content:center;
+}
+
+/* Paramétrage du bloc droit de la présentation */
+.presentation-droit{
+    display: flex;
+    width:30%;
+    text-align:center;
+    align-items:center;
+    justify-content:center;
+}
+
+/* Modification du texte */
+.titre-presentation{
+    font-family:ArialBold;
+    font-size:40px;
+    color:var(--global-background-color, white);
+}
+
+/* Modification de l'icône */
+.png-presentation{
+    width: 80px;
+    height: 80px;
+    padding:30px;
+    border-radius: 50%; 
+    color : var(--global-background-color, white);
+    border: 1px solid var(--global-background-color, white);
+}
+
+/* Marges pour la section des mentions légales et de la section cgu */
+.mentions-legales, .cgu{
+    margin : 10px 50px 10px;
+}
+
+/* Modification du style du titre */
+.titre{
+    margin-top:20px;
+    font-family:ArialBold;
+    font-size:30px;
+    color: var(--global-main-color, #82786F);
+}
+
+/* Modification du style du texte */
+.texte{
+    font-family:ArialRegular;
+    font-size:17px;
+    color:black;
+}
+
+/* Style de l'accordéon */
+.accordeon{
+    width:100%;
+}
+
+.accordeon .contentBx{
+    position:relative;
+}
+
+/* Titre de l'accordéon */
+.accordeon .contentBx .label{
+    position:relative;
+    font-family:ArialBold;
+    font-size:25px;
+    padding:15px;
+    background:var(--global-main-color, #82786F);
+    color:white;
+    cursor:pointer;
+    border-radius: 15px; 
+}
+
+/* Bouton d'affichage de l'accordéon */
+.accordeon .contentBx .label::before{
+    content: 'Afficher ⇩';
+    position:absolute;
+    font-family:ArialBold;
+    font-size:20px;
+    top:35%;
+    right:20px;
+    transform:translate(-50%);
+}
+
+/* Bouton d'e fermeture de l'accordéon */
+.accordeon .contentBx.active .label::before{
+    content: 'Fermer ⇧';
+}
+
+/* Style du contenu */
+.accordeon .contentBx .contenu{
+    position: relative;
+    font-family:ArialRegular;
+    font-size:17px;
+    color:black;
+    padding: 10px;
+    height: 0;
+    overflow:hidden;
+}
+
+.accordeon .contentBx.active .contenu{
+    height:auto;
+    padding:10px;
+}
+
+/* Adaptation à toutes les tailles d'écran */
+@media screen and (max-width:1080px){
+    section.text-principale{
+        padding:10px;
+    }
+
+    .accordeon .contentBx .label{
+        font-size:20px;
+    }
+    
+    .accordeon .contentBx .label::before{
+        font-size:18px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .presentation-gauche{
+        padding-left:25px;
+    }
+
+    .titre-presentation{
+        font-size:25px;
+    }
+    
+    .texte-presentation{
+        font-size:18px;
+    }
+
+    .png-presentation{
+        width: 50px;
+        height: 50px;
+    }
+
+    .accordeon .contentBx .label{
+        font-size:15px;
+    }
+    
+    .accordeon .contentBx .label::before{
+        font-size:13px;
+    }
+}
+
+@media screen and (max-width:614px){
+    .presentation-page{
+        height:150px;
+        width:100%;
+    }
+
+    .presentation-gauche{
+        padding-left:15px;
+    }
+
+    .titre-presentation{
+        font-size:20px;
+    }
+    
+    .texte-presentation{
+        font-size:13px;
+    }
+
+    .png-presentation{
+        width: 30px;
+        height: 30px;
+        padding:20px;
+    }    
+
+    .accordeon .contentBx .label{
+        font-size:13px;
+    }
+}
+
+@media screen and (max-width:570px){
+    .accordeon .contentBx .label::before{
+        content: ' ⇩';
+        right:25px;
+    }
+    
+    .accordeon .contentBx.active .label::before{
+        content: '⇧';
+    }
+}
+
+@media screen and (max-width:390px){
+    .presentation-page{
+        height:130px;
+    }
+
+    .presentation-gauche{
+        padding-left:15px;
+    }
+
+    .titre-presentation{
+        font-size:15px;
+    }
+    
+    .texte-presentation{
+        font-size:10px;
+    }
+
+    .png-presentation{
+        width: 25px;
+        height: 25px;
+        padding:20px;
+    }    
+
+    .mentions-legales, .cgu{
+        margin : 10px 30px 10px;
+    }
+
+    .titre{
+        font-size:20px;
+    }
+    
+    .texte{
+        font-size:10px;
+    }
+}
+
+@media screen and (max-width:285px){
+    .presentation-page{
+        height:100px;
+    }
+
+    .presentation-gauche{
+        padding-left:10px;
+        padding-top:5px;
+        width:60%;
+    }
+
+    .titre-presentation{
+        font-size:13px;
+    }
+    
+    .texte-presentation{
+        font-size:8px;
+    }
+
+    .png-presentation{
+        width: 30px;
+        height: 30px;
+        padding:10px;
+    }
+
+    .accordeon .contentBx .label{
+        font-size:11px;
+    }
+    
+    .accordeon .contentBx .label::before{
+        font-size:10px;
+    }
+
+    .accordeon .contentBx .contenu{
+        font-size:10px;
+    }
+}

@@ -1,0 +1,27 @@
+body, html{
+    margin:0;
+    padding:0;
+    min-height:100vh;
+}
+
+/* Permet de garder le footer en bas de la page */
+main{
+    margin-top:93px;
+    min-height: 120vh;
+}
+
+.container{
+    width:50%;
+    text-align:center;
+    align-items:center;
+    justify-content:center;
+    border-radius:15px;
+    border:3px solid rgb(5,122,168);
+    padding:30px;
+}
+
+.h1{
+    font-family:ArialBold;
+    font-size:50px;
+    width:fit-content;
+}

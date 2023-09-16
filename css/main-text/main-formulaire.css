@@ -1,0 +1,187 @@
+body, html{
+    margin:0;
+    padding:0;
+    min-height:100vh;
+}
+
+/* Permet de garder le footer en bas de la page */
+main{
+    display: flex;
+    flex-direction:column;
+    position: relative;
+    margin-top:100px;
+    min-height: 100%;
+}
+
+/* CSS pour le texte d'information en début de page */
+.info-mail{
+    position: absolute;
+    right:50%;
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);  
+    font-family:ArialBoldItalic;
+    font-size:15px;
+    color: var(--global-main-color, rgb(5,122,168));
+}
+
+/* CSS pour le formulaire */
+.formulaire{
+    position: absolute;
+    right:50%;
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);  
+    margin-top:80px;
+    overflow: auto;
+    width:870px;
+    height:80%;
+    border: 2px solid rgb(5,122,168);
+    border-radius: 15px;
+    padding:15px;
+}
+
+/* CSS pour le titre et le texte du formulaire */
+.formulaire h3{
+    font-family:ArialBold;
+    font-size:18px;
+}
+
+.formulaire p, label{
+    font-family:ArialRegular;
+    font-size:15px;
+}
+
+/* Modification du css des input */
+input[type=text], input[type=email], input[type=password]{
+    font-family:ArialRegular;
+    font-size:15px;
+    border:0;
+    border-bottom:1px solid black;
+    margin:5px;
+}
+
+/* Ne pas modifier le style lorsqu'il y a un focus */
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus{
+    outline:none;
+}
+
+
+/* Envoi du formulaire */
+button{
+    font-family:ArialBold;
+    font-size:20px;
+    border:1px solid rgb(5,122,168); 
+    background:white;
+    border-radius:15px;
+    padding:10px;
+    cursor:pointer;
+    transition:all .3s ease;
+}
+
+button:hover{
+    color:white;
+    border:1px solid black; 
+    background:var(--global-main-color, rgb(5,122,168));
+}
+
+/* CSS pour le symbole de l'oeil */
+.fa-eye{
+    position: relative;
+    top: 28%;
+    right: 4%;
+    cursor: pointer;
+    color: lightgray;
+  }
+
+/* Bare déroulante du CSS */
+/* Webkit pour implémenter la bare de recherche dans tout les navigateurs */
+.formulaire::-webkit-scrollbar{
+    width:15px;
+    padding:5px;
+}
+
+.formulaire::-webkit-scrollbar-track {
+    background: white;
+    border-radius:15px;
+    border:1px solid #6E7375;
+}
+
+/* Permet d'afficher la zone où on est */
+.formulaire::-webkit-scrollbar-thumb{
+    background:#6E7375;
+    border-radius:15px;
+}
+
+.formulaire::-webkit-scrollbar-thumb:hover{
+    background:#595d5f;
+}
+
+/* Paramétrage des bouttons */
+.formulaire::-webkit-scrollbar-button:single-button {
+    background-color: transparent;
+    display: block;
+    border-style: solid;
+    height: 18px;
+    width: 13px;
+}
+
+
+/* Paramétrage du boutton du haut */
+.formulaire::-webkit-scrollbar-button:single-button:vertical:decrement {
+    border-width: 0 8px 8px 8px;
+    border-color: transparent transparent #6E7375 transparent;
+}
+
+.formulaire::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+    border-color: transparent transparent #595d5f transparent;  
+}
+
+/* Paramétrage du boutton du bas */
+.formulaire::-webkit-scrollbar-button:single-button:vertical:increment {
+    border-width: 8px 8px 0 8px;
+    border-color: #6E7375 transparent transparent transparent;
+}
+
+.formulaire::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+    border-color: #595d5f transparent transparent transparent;
+}
+
+/* Adaptation à tout les écrans */
+@media screen and (max-width:955px){
+    .info-mail{
+        position: absolute;
+        left:30px;
+        width:80%;
+        -ms-transform: translateX(0);
+        transform: translateX(0);  
+    }
+
+    .formulaire{
+        width:90%;
+    }
+}
+
+@media screen and (max-width:450px){
+    .formulaire{
+        width:80%;
+    }
+
+    .info-mail, .formulaire p, label, input[type=text], input[type=email], input[type=password]{
+        font-size:13px;
+    }
+
+    .formulaire h3, button{
+        font-size:15px;
+    }
+
+    .formulaire::-webkit-scrollbar{
+        width:10px;
+    }
+
+    .formulaire::-webkit-scrollbar-button:single-button:vertical:decrement {
+        border-width: 0 6px 6px 6px;
+    }
+    
+    .formulaire::-webkit-scrollbar-button:single-button:vertical:increment {
+        border-width: 6px 6px 0 6px;
+    }
+}
