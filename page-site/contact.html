@@ -1,0 +1,158 @@
+<!doctype html lang="fr">
+
+<html>
+    <head>
+        <meta charset="utf-8" content="Page des contacts">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SNCF Malveillance | Contacts</title>
+        <link rel="icon" sizes="any" href="../img/logos/sncf_reseau.ico" type="image/x-icon"/>
+        
+        <link rel="stylesheet" href="../css/global-variable/global-contacts.css" media="all">
+        <link rel="stylesheet" href="../css/header.css" media="all">
+        <link rel="stylesheet" href="../css/footer.css" media="all">
+        <link rel="stylesheet" href="../css/polices.css" media="all">
+        <link rel="stylesheet" href="../css/main-text/main-contacts.css" media="all">
+
+        <script src="../js/jquery-3.6.3.min.js"></script>
+        
+        <script src="../js/back2top/back2top.js" defer></script>
+        <link rel="stylesheet" href="../css/back2top.css" media="all">
+
+        <script src="../js/searchbar/active-searchbar.js" type="text/javascript" defer></script>
+        <script src="../js/searchbar/suggestions.js" defer></script>
+        <script src="../js/searchbar/automate-searchbar.js" defer></script>
+        <script src="../js/searchbar/send-research.js" defer></script>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+    </head>
+
+    <body>
+
+        <header>
+            
+            <div class="header-left">
+                <a href="https://www.sncf-reseau.com/fr"><img class="sncf-reseau-logo" src="../img/logos/LOGO_SNCF_RESEAU_WEB.png" alt="logo"></a>
+                
+                
+                <nav class="tc-nav">
+                    
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </label>
+
+                    
+                    <ul>
+                        <li><a href="./home.html"><ion-icon name="home-outline" class="icon-container"></ion-icon><span>Acceuil</span></a></li>
+                        <li><a href="./sncf-reseau.html"><ion-icon name="help-outline" class="icon-container"></ion-icon><span>Qui sommes-nous ?</span></a></li>
+                        <li><a href="./malveillance.html"><ion-icon name="alert-circle-outline" class="icon-container"></ion-icon><span>La malveillance sur le rail</span></a></li>
+                        <li><a href="./videos-surete.html"><ion-icon name="videocam-outline" class="icon-container"></ion-icon><span>Vidéos de prévention</span></a></li>
+                    </ul>
+                    
+                </nav>
+            </div>
+            
+            
+            <div class="header-right">
+                
+                <div id="searchUsers" class="search-container">
+                    <div class="search-input">
+                        <form id="form-search" role="search">
+                            <input id="searchBar" class="instant-search--input" type="text" placeholder="Recherchez..." aria-label="search" value="Recherchez" name="search" maxlength="25" autocompelte="off" onMouseDown="active();" onBlur="inactive();" spellcheck="true"/>
+                            <button type="submit" class="button-search"><ion-icon name="search-circle-outline" class="icon-search" arial-label="submit search"></ion-icon></button>    
+                        </form>
+
+                        
+                        <div class="autocom-box">
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="connexion">
+                    <a href="../php/index.php"><ion-icon name="person-circle-outline" id="search-check" class="icon-connexion"></ion-icon></a>
+                </div>
+           </div>
+        </header>
+
+        <main>
+            
+            <section class="presentation-page">
+                <div class="presentation-gauche">
+                    <p class="titre-presentation">
+                        Un problème ?
+                    </p>
+                    <p class="texte-presentation">
+                        Vous pouvez retrouver tout les contacts de la SNCF Réseau sur le site officiel
+                    </p>    
+                </div>
+
+                <div class="presentation-droit">
+                    <ion-icon name="call-outline" class="png-presentation"></ion-icon>
+                </div>
+            </section>
+
+            
+            <section class="section-principale">
+                
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3255.336318271916!2d2.3501276508456734!3d48.920927078251275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e4a6f1dc8cf%3A0x67e9b1f2a4d4dce3!2sSNCF%20-%20Campus%20Rimbaud!5e0!3m2!1sfr!2sfr!4v1672433464201!5m2!1sfr!2sfr" class="map-iframe"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                
+                <div class="coordonnees">
+                    <p class="titre-principal">Les coordonnées du Campus Rimbaud à Paris</p>
+                    <p class="texte-principal">
+                        15 /17 rue Jean-Philippe Rameau<br>
+                        CS 80001 - 93 418<br>
+                        La plaine Saint Denis Cedex<br>
+                        Tél. : +33 (0)1 71 92 60 00<br>
+                    </p><br>
+                    <p class="texte-principal">
+                        Site officiel de la SNCF Réseau (le lien renvoie vers la page de contact : 
+                    </p>
+                    <a href="https://www.sncf-reseau.com/fr/contacts"><span>https://www.sncf-reseau.com/fr/contacts</span></a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            
+            <div name="image-footer">
+                
+                <img src="../img/illustrations/zebras.png" class="center-image" style="filter: invert(17%) sepia(47%) saturate(4891%) hue-rotate(350deg) brightness(95%) contrast(85%);" type="image/png"/>
+            </div>
+
+            
+            <div class="footer">
+                <div class="footer_left">
+                    <a href="https://www.sncf.com/fr"><img class="sncf-logo" src="../img/logos/sncf.png" alt="logo" type="image/png"/></a>
+                </div>
+    
+                <div class="footer_right">
+                    <nav>
+                        <a href="./contact.html" target="_blank"> 
+                            <span>
+                                Nous contactez
+                            </span>
+                        </a>
+    
+                        <a href="./cookies.html" target="_blank"> 
+                            <span>
+                                Données personnelles et cookies
+                            </span>
+                        </a>
+    
+                        <a href="./cgu.html" target="_blank"> 
+                            <span>
+                                Mentions légales et CGU
+                            </span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

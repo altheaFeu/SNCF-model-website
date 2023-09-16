@@ -1,0 +1,204 @@
+<!doctype html lang="fr">
+
+<html>
+    <head>
+        <meta charset="utf-8" content="Home page pour le site SNCF Réseau malveillance">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SNCF Malveillance | Acceuil</title>
+        <link rel="icon" sizes="any" href="../img/logos/sncf_reseau.ico" type="image/x-icon"/>
+        
+        <link rel="stylesheet" href="../css/global-variable/global-acceuil.css" media="all">
+        <link rel="stylesheet" href="../css/header.css" media="all">
+        <link rel="stylesheet" href="../css/footer.css" media="all">
+        <link rel="stylesheet" href="../css/head-main/carousel.css" media="all">
+        <link rel="stylesheet" href="../css/main-text/main-acceuil.css" media="all">
+        <link rel="stylesheet" href="../css/polices.css" media="all">
+        
+        <script src="../js/back2top/back2top.js" defer></script>
+        <link rel="stylesheet" href="../css/back2top.css" media="all">
+
+        <script src="../js/carousel.js" defer></script>
+        <script src="../js/carousel-size.js" defer></script>
+
+        <script src="../js/searchbar/active-searchbar.js" type="text/javascript" defer></script>
+        <script src="../js/searchbar/suggestions.js" defer></script>
+        <script src="../js/searchbar/automate-searchbar.js" defer></script>
+        <script src="../js/searchbar/send-research.js" defer></script>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+
+    </head>
+
+    <body>
+        <header>
+            <div class="header-left">
+                <a href="https://www.sncf-reseau.com/fr"><img class="sncf-reseau-logo" src="../img/logos/LOGO_SNCF_RESEAU_WEB.png" alt="logo"></a>
+                
+                <nav class="tc-nav">
+                    
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </label>
+
+                    <ul>
+                        <li><a href="./home.html"><ion-icon name="home-outline" class="icon-container"></ion-icon><span>Acceuil</span></a></li>
+                        <li><a href="./sncf-reseau.html"><ion-icon name="help-outline" class="icon-container"></ion-icon><span>Qui sommes-nous ?</span></a></li>
+                        <li><a href="./malveillance.html"><ion-icon name="alert-circle-outline" class="icon-container"></ion-icon><span>La malveillance sur le rail</span></a></li>
+                        <li><a href="./videos-surete.html"><ion-icon name="videocam-outline" class="icon-container"></ion-icon><span>Vidéos de prévention</span></a></li>
+                    </ul>
+                    
+                </nav>
+            </div>
+            
+            <div class="header-right">
+                <div id="searchUsers" class="search-container">
+                    <div class="search-input">
+                        <form id="form-search" role="search">
+                            <input id="searchBar" class="instant-search--input" type="text" placeholder="Recherchez..." aria-label="search" value="Recherchez" name="search" maxlength="25" autocompelte="off" onMouseDown="active();" onBlur="inactive();" spellcheck="true"/>
+                            <button type="submit" class="button-search"><ion-icon name="search-circle-outline" class="icon-search" arial-label="submit search"></ion-icon></button>    
+                        </form>
+
+                        <div class="autocom-box">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="connexion">
+                    <a href="../php/index.php"><ion-icon name="person-circle-outline" id="search-check" class="icon-connexion"></ion-icon></a>
+                </div>
+           </div>
+        </header>
+
+        <div id="carousel" class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev"><ion-icon name="arrow-back-circle-outline" class="arrow-carousel"></ion-icon></button>
+            <button class="carousel-button next" data-carousel-button="next"><ion-icon name="arrow-forward-circle-outline" class="arrow-carousel"></ion-icon></button>
+
+            <ul data-slides>
+                <li class="slide" data-active>
+                    <img src="../img/images/train_sncf.jpg" alt="Train SNCF">
+                    <span class="car-text-prem text1">La SNCF s'assure de votre sécurité</span>
+                    <span class="car-text-sec text1">dans les gares et tout au long de vos trajets</span>
+                </li>
+                <li class="slide">
+                    <img src="../img/images/surete_ferroviaire.jpg" alt="Sûreté Ferroviaire">
+                    <span class="car-text-prem text2">La SNCF s'assure de votre sécurité</span>
+                    <span class="car-text-sec text2">en travaillant avec la gendarmerie et la SUGE</span>
+                </li>
+                <li class="slide">
+                    <img src="../img/images/sncf_personnel.jpg" alt="Personnel SNCF">
+                    <span class="car-text-prem text3">La SNCF embauche !</span>
+                    <span class="car-text-sec text3">Nous avons besoin de vous pour assurer la sécurité des voyageurs</span>
+                </li>
+                <li class="slide">
+                    <img src="../img/images/travaux_sncf.jpg" alt="Travaux SNCF">
+                    <span class="car-text-prem text4">La SNCF augmente votre sécurité</span>
+                    <span class="car-text-sec text4">à travers des travaux et des chantiers</span>
+                </li>
+            </ul>
+        </div>
+
+        <main>
+            <div class="main-infos">
+                <img src="../img/images/agents_rail.jpg" class="image-chantier">
+
+                <div class="text-principal">
+                    <p class="titre">Titre</p>
+                    <p class="lettrine">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quas incidunt repudiandae in facere nemo consequuntur explicabo ullam cupiditate quis distinctio 
+                        obcaecati laboriosam accusamus, ratione, beatae harum voluptates cumque quaerat. Similique.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quas incidunt repudiandae in facere nemo consequuntur explicabo ullam cupiditate quis distinctio 
+                        obcaecati laboriosam accusamus, ratione, beatae harum voluptates cumque quaerat. Similique.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quas incidunt repudiandae in facere nemo consequuntur explicabo ullam cupiditate quis distinctio 
+                        obcaecati laboriosam accusamus, ratione, beatae harum voluptates cumque quaerat. Similique.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quas incidunt repudiandae in facere nemo consequuntur explicabo ullam cupiditate quis distinctio 
+                        obcaecati laboriosam accusamus, ratione, beatae harum voluptates cumque quaerat. Similique.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quas incidunt repudiandae in facere nemo consequuntur explicabo ullam cupiditate quis distinctio 
+                        obcaecati laboriosam accusamus, ratione, beatae harum voluptates cumque quaerat. Similique.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quas incidunt repudiandae in facere nemo consequuntur explicabo ullam cupiditate quis distinctio 
+                        obcaecati laboriosam accusamus, ratione, beatae harum voluptates cumque quaerat. Similique.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quas incidunt repudiandae in facere nemo consequuntur explicabo ullam cupiditate quis distinctio 
+                        obcaecati laboriosam accusamus, ratione, beatae harum voluptates cumque quaerat. Similique.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quas incidunt repudiandae in facere nemo consequuntur explicabo ullam cupiditate quis distinctio 
+                        obcaecati laboriosam accusamus, ratione, beatae harum voluptates cumque quaerat. Similique.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quas incidunt repudiandae in facere nemo consequuntur explicabo ullam cupiditate quis distinctio 
+                        obcaecati laboriosam accusamus, ratione, beatae harum voluptates cumque quaerat. Similique.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quas incidunt repudiandae in facere nemo consequuntur explicabo ullam cupiditate quis distinctio 
+                        obcaecati laboriosam accusamus, ratione, beatae harum voluptates cumque quaerat. Similique.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quas incidunt repudiandae in facere nemo consequuntur explicabo ullam cupiditate quis distinctio 
+                        obcaecati laboriosam accusamus, ratione, beatae harum voluptates cumque quaerat. Similique.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quas incidunt repudiandae in facere nemo consequuntur explicabo ullam cupiditate quis distinctio 
+                        obcaecati laboriosam accusamus, ratione, beatae harum voluptates cumque quaerat. Similique.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quas incidunt repudiandae in facere nemo consequuntur explicabo ullam cupiditate quis distinctio 
+                        obcaecati laboriosam accusamus, ratione, beatae harum voluptates cumque quaerat. Similique.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quas incidunt repudiandae in facere nemo consequuntur explicabo ullam cupiditate quis distinctio 
+                        obcaecati laboriosam accusamus, ratione, beatae harum voluptates cumque quaerat. Similique.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quas incidunt repudiandae in facere nemo consequuntur explicabo ullam cupiditate quis distinctio 
+                        obcaecati laboriosam accusamus, ratione, beatae harum voluptates cumque quaerat. Similique.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quas incidunt repudiandae in facere nemo consequuntur explicabo ullam cupiditate quis distinctio 
+                        obcaecati laboriosam accusamus, ratione, beatae harum voluptates cumque quaerat. Similique.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quas incidunt repudiandae in facere nemo consequuntur explicabo ullam cupiditate quis distinctio 
+                        obcaecati laboriosam accusamus, ratione, beatae harum voluptates cumque quaerat. Similique.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quas incidunt repudiandae in facere nemo consequuntur explicabo ullam cupiditate quis distinctio 
+                        obcaecati laboriosam accusamus, ratione, beatae harum voluptates cumque quaerat. Similique.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div name="image-footer">
+                <img src="../img/illustrations/zebras.png" class="center-image" style="filter: invert(26%) sepia(93%) saturate(1711%) hue-rotate(174deg) brightness(96%) contrast(102%);" type="image/png"/>
+            </div>
+
+            <div class="footer">
+                <div class="footer_left">
+                    <a href="https://www.sncf.com/fr"><img class="sncf-logo" src="../img/logos/sncf.png" alt="logo" type="image/png"/></a>
+                </div>
+    
+                <div class="footer_right">
+                    <nav>
+                        <a href="./contact.html" target="_blank"> 
+                            <span>
+                                Nous contactez
+                            </span>
+                        </a>
+    
+                        <a href="./cookies.html" target="_blank"> 
+                            <span>
+                                Données personnelles et cookies
+                            </span>
+                        </a>
+    
+                        <a href="./cgu.html" target="_blank"> 
+                            <span>
+                                Mentions légales et CGU
+                            </span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+        
+    </body>
+</html>
