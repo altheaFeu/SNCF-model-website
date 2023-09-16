@@ -1,4 +1,6 @@
 # SNCF Website Model
+My first website created for a course in HTML, JS, and CSS only.
+
 A website resembling that of SNCF, featuring:
 
 - A carousel
