@@ -1,0 +1,7 @@
+:root {
+    --global-main-color: #E05206;
+    --global-color-text-background: rgb(76,76,76);
+    --global-color-text-footer: rgb(185,185,185);
+    --global-color-text-footer-hover: rgb(129,128,128);
+    --global-background-color: white;
+}
