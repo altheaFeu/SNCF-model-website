@@ -1,0 +1,273 @@
+
+.arrow-carousel{
+    color:var(--global-main-color, rgb(5,122,168));
+    width:35px; 
+    height:35px; 
+    border-radius:50%; 
+    background-color:var(--global-background-color, rgb(128, 4, 4));
+    border: 0.5px solid rgba(116, 116, 116, 0.5);
+}
+
+
+.carousel{
+    display:grid;
+    max-width:100%;
+    max-height:auto;
+    height:80vh;
+    position:relative;
+    margin-top:100px;
+    margin-bottom:20px;
+    background-color: var(--global-color-text-background, rgb(76,76,76));
+}
+
+
+.carousel > ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+
+.slide{
+    position:absolute;
+    max-width:100%;
+    width:100%;
+    inset:0;
+    opacity:0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+
+
+.slide > img {
+    position:relative;
+    max-width:100%;
+    width:100%;
+    height:auto;
+    max-height:100%;
+    object-fit: contain; 
+    margin-left: auto;
+    margin-right: auto;
+    opacity:40%;
+}
+
+
+.slide[data-active]{
+    opacity:1;
+    z-index: 2;
+}
+
+
+.carousel-button{
+    position:absolute;
+    z-index : 3;
+    background:none;
+    border:none;
+    font-size:4rem;
+    top:50%;
+    transform: translateY(-50%);
+    cursor:pointer;
+    padding : 0 .5rem;
+}
+
+.arrow-carousel:hover{
+    width:50px;
+    height:50px;
+    transition:100ms;
+}
+
+.carousel-button.prev{
+    left:1rem;
+}
+
+.carousel-button.next{
+    right:1rem;
+}
+
+
+.car-text-prem{
+    position:absolute;
+    z-index : 3;
+    font-family: ArialBold;
+    font-size:3.8vw;;
+    color:var(--global-background-color, white);
+    text-shadow: rgba(23, 23, 23, 0.7) 5px -3px;
+    top:50px;
+    left:230px;
+}
+
+
+.car-text-sec{
+    position:absolute;
+    z-index : 3;
+    font-family: ArialBold;
+    font-size:1.7vw;
+    color: var(--global-background-color, white);
+    top:140px;
+    left:230px;
+}
+
+.car-text-prem.text2, .car-text-sec.text2{
+    left:250px;
+}
+
+.car-text-prem.text3, .car-text-sec.text3{
+    left:300px;
+}
+
+.car-text-prem.text4, .car-text-sec.text4{
+    left:250px;
+}
+
+
+@media screen and (max-width:1140px){
+    .carousel{
+        height:50vw;    
+    }
+
+    .car-text-prem.text1, .car-text-sec.text1{
+        left:100px;
+    }
+    
+    .car-text-prem.text2, .car-text-sec.text2{
+        left:100px;
+    }
+    
+    .car-text-prem.text3, .car-text-sec.text3{
+        left:200px;
+    }
+    
+    .car-text-prem.text4, .car-text-sec.text4{
+        left:100px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .carousel{
+        height:40vw;    
+    }
+
+    .arrow-carousel{
+        width:25px;
+        height:25px;
+    }
+
+    .arrow-carousel:hover{
+        width:30px;
+        height:30px;
+        transition:100ms;
+    }
+
+    .car-text-prem{
+        font-size:3vw;
+        top:30px;
+        text-shadow: rgba(23, 23, 23, 0.7) 3px -2px;
+    }
+    
+    .car-text-sec{
+        font-size:1.5vw;
+        top:80px;
+    }
+
+    .car-text-prem.text1, .car-text-sec.text1{
+        left:130px;
+    }
+    
+    .car-text-prem.text2, .car-text-sec.text2{
+        left:150px;
+    }
+    
+    .car-text-prem.text4, .car-text-sec.text4{
+        left:150px;
+    }
+}
+
+
+@media screen and (max-width:600px){    
+    .car-text-prem{
+        text-shadow: rgba(23, 23, 23, 0.7) 3px -2px;
+    }
+
+    .car-text-sec{
+        top:50px;
+    }
+
+    .car-text-prem.text1, .car-text-sec.text1{
+        left:80px;
+    }
+    
+    .car-text-prem.text2, .car-text-sec.text2{
+        left:100px;
+    }
+
+    .car-text-prem.text3, .car-text-sec.text3{
+        left:120px;
+    }
+    
+    .car-text-prem.text4, .car-text-sec.text4{
+        left:100px;
+    }
+}
+
+@media screen and (max-width:415px){    
+    .car-text-prem{
+        top:20px;
+    }
+
+    .car-text-sec{
+        top:40px;
+    }
+
+    .car-text-prem.text1, .car-text-sec.text1{
+        left:60px;
+    }
+    
+    .car-text-prem.text2, .car-text-sec.text2{
+        left:80px;
+    }
+
+    .car-text-prem.text3, .car-text-sec.text3{
+        left:100px;
+    }
+    
+    .car-text-prem.text4, .car-text-sec.text4{
+        left:70px;
+    }
+}
+
+@media screen and (max-width:280px){    
+    .arrow-carousel{
+        width:15px;
+        height:15px;
+    }
+
+    .arrow-carousel:hover{
+        width:20px;
+        height:20px;
+        transition:100ms;
+    }
+
+    .car-text-prem{
+        top:20px;
+    }
+
+    .car-text-sec{
+        top:30px;
+    }
+
+    .car-text-prem.text1, .car-text-sec.text1{
+        left:60px;
+    }
+    
+    .car-text-prem.text2, .car-text-sec.text2{
+        left:60px;
+    }
+
+    .car-text-prem.text3, .car-text-sec.text3{
+        left:100px;
+    }
+    
+    .car-text-prem.text4, .car-text-sec.text4{
+        left:70px;
+    }
+}
