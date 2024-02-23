@@ -9,11 +9,11 @@
 [![En Cours de Modification](https://img.shields.io/badge/En%20Cours%20de%20Modification-Oui-green.svg)](LICENSE.md)
 
 
-# Présentation
+## Présentation
 
 Ce site web s'inspire du design du site de la SNCF et a été réalisé dans le cadre du cours de web dynamique de la 1<sup>ère</sup> année de master.
 
-# Composition
+## Composition
 
 Le site intègre plusieurs éléments créés en "vanilla" (JavaScript vanilla, CSS basique, PHP basique) :
 - Un carousel
@@ -21,7 +21,7 @@ Le site intègre plusieurs éléments créés en "vanilla" (JavaScript vanilla, 
 - Un bouton "Back to Top"
 - Un accordéon
 
-# Arborescence
+## Arborescence
 
 ```
 .
@@ -78,7 +78,7 @@ Le site intègre plusieurs éléments créés en "vanilla" (JavaScript vanilla, 
 └── README.md
 ```
 
-# Installation
+## Installation
 
 Un serveur est nécessaire pour faire fonctionner le site. J'utilise un serveur WAMP, mais vous pouvez également utiliser d'autres serveurs tels que XAMPP.
 
@@ -88,7 +88,7 @@ Pour utiliser ce projet, vous pouvez le télécharger manuellement ou utiliser l
 git clone https://github.com/nom-utilisateur/nom-projet.git
 ```
 
-# Gestion de la base de données
+## Gestion de la base de données
 
 Pour utiliser la page de connexion et de déconnexion, vous aurez besoin d'un serveur MySQL. Allez dans le dossier `php -> config.php` et modifiez la variable `$bdd` en fonction de vos paramètres :
 
@@ -96,6 +96,6 @@ Pour utiliser la page de connexion et de déconnexion, vous aurez besoin d'un se
 $bdd = new PDO('mysql:host=localhost;dbname=projet_html;charset=utf8', 'root', '');
 ```
 
-# Page secrète
+## Page secrète
 
 Pour accéder à la page secrète (`bulles.html`), tapez "bulles" dans la barre de recherche.
