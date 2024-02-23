@@ -15,7 +15,7 @@ Ce site web s'inspire du design du site de la SNCF et a été réalisé dans le 
 
 ## Composition
 
-Le site intègre plusieurs éléments créés en "vanilla" (JavaScript vanilla, CSS basique, PHP basique) :
+Le site comprend divers éléments conçus en utilisant les bases de développement web, incluant :
 - Un carousel
 - Une page de connexion et d'inscription
 - Un bouton "Back to Top"
