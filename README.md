@@ -93,7 +93,20 @@ git clone https://github.com/altheaFeu/SNCF-model-website.git
 Pour utiliser la page de connexion et de déconnexion, vous aurez besoin d'un serveur MySQL. Allez dans le dossier `php -> config.php` et modifiez la variable `$bdd` en fonction de vos paramètres :
 
 ```php
-$bdd = new PDO('mysql:host=localhost;dbname=projet_html;charset=utf8', 'root', '');
+$bdd = new PDO('mysql:host=localhost;dbname=your-dbname;charset=utf8', 'your-user', 'your-password');
+```
+
+Assurez-vous que votre base de données comprend la table **Utilisateurs**, avec les colonnes "cp" (qui correspond à l'identifiant des agents de la SNCF), "email" et "password".
+
+Voici comment vous pourriez créer cette table : 
+
+```sql
+CREATE TABLE Utilisateurs (
+    id SERIAL PRIMARY KEY,
+    cp VARCHAR(8) UNIQUE NOT NULL CHECK (cp ~ '^[0-9]{7}[A-Z]{1}$'),
+    email VARCHAR(100) CHECK (email ~ '^\w{1,100}\.[\w.]+@reseau\.sncf\.fr$'),
+    password VARCHAR(255) NOT NULL
+);
 ```
 
 ## Page secrète
