@@ -80,12 +80,12 @@ Le site comprend divers éléments conçus en utilisant les bases de développem
 
 ## Installation
 
-Un serveur est nécessaire pour faire fonctionner le site. J'utilise un serveur WAMP, mais vous pouvez également utiliser d'autres serveurs tels que XAMPP.
+La mise en place de votre environnement de développement web est une étape cruciale pour faire fonctionner ce projet. Actuellement, j'utilise WAMP, mais vous avez également la possibilité d'opter pour d'autres solutions telles que XAMPP, en fonction de vos préférences.
 
-Pour utiliser ce projet, vous pouvez le télécharger manuellement ou utiliser la ligne de commande git :
+Pour obtenir le code source du projet, vous avez deux options : télécharger manuellement les fichiers ou utiliser la ligne de commande Git. Si vous choisissez la seconde option, exécutez la commande suivante dans l'interpréteur git :
 
 ```bash
-git clone https://github.com/nom-utilisateur/nom-projet.git
+git clone https://github.com/altheaFeu/SNCF-model-website.git
 ```
 
 ## Gestion de la base de données
